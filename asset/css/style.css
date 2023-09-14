@@ -82,7 +82,16 @@ body{
     height: calc(100vh - 120px);
     overflow-y: scroll;
 }
-
+.my-message{
+    background-color: #D5F9BA;
+}
+.friend-message{
+    background-color: #FFFFFF;
+}
+.send{
+    font-size: 10px;
+    color: grey;
+}
 .site-footer-right{
     height: 60px;
 }
