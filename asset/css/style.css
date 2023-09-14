@@ -52,6 +52,12 @@ body{
     padding-bottom: 100px;
 }
 
+
+
+
+.site-head-left, .site-head-right{
+    height: 60px;
+}
 .main-conversation{
     background-image: url(../img/mine.jpg);
 }
