@@ -31,7 +31,7 @@ body{
 .chat-list, .main-chat{
     background-color: #FFFFFF;
 }
-.avatar{
+.user-image{
     width: 40px;
     height: 40px;
     border-radius: 50%;
