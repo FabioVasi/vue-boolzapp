@@ -184,7 +184,10 @@ const { createApp } = Vue
             }
         },
         methods: {
-            
+            activeFriendChat(index) {
+                this.activeContact = index;
+                console.log(this.activeContact);
+            }
         }
     
     }).mount('#app')

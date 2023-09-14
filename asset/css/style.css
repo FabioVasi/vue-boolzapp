@@ -17,6 +17,9 @@ body{
     background-color: #E9EBEB;
     padding-top: 30px;
 }
+.lightgrey{
+    background-color: lightgrey;
+}
 .container{
     max-width: 1170px;
 
