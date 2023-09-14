@@ -51,7 +51,7 @@
 
                         <div  v-for="(contact,index) in contacts" @click="activeFriendChat(index)" class="card-user p-2 d-flex justify-content-between align-items-center" :class="activeContact == index ? 'lightgrey' : '' ">
                             <div class="d-flex justify-content-start align-items-center">
-                                <img class="avatar" :src="contact.avatar" alt="User Image">
+                                <img class="avatar" v-bind:src="contact.avatar" alt="User Image">
                                 <div>
                                     <span class="ps-2 fw-medium">{{contact.name}}</span>
                                     <p class="last-message ps-2 m-0">{{contact.messages[contact.messages.length - 1].message}}</p>
