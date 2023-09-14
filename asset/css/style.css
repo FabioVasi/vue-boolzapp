@@ -20,8 +20,9 @@ body{
     max-width: 1170px;
 
 }
-.row{
-    
+.division{
+    display: flex;
+    flex-wrap: wrap;
 }
 .chat-list, .main-chat{
     background-color: #FFFFFF;
