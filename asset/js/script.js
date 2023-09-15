@@ -225,10 +225,9 @@ const { createApp } = Vue
                 let objectMessage = {message: 'Ok!', status: 'received', date: '10/01/2020 16:15:01'};                    
                 this.contacts[this.activeContact].messages.push(objectMessage);                
             },
-            friendChatFilter(friendName) {
-                this.contacts.forEach(function (contact, index, contacts) {
-                    
-                });
+            friendChatFilter() {
+                console.log(this.friendName);
+                
             }
         }
     
