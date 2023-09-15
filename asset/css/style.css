@@ -22,15 +22,16 @@ body{
 }
 .container{
     max-width: 1170px;
-
 }
 .division{
     display: flex;
     flex-wrap: wrap;
 }
+
 .chat-list, .main-chat{
     background-color: #FFFFFF;
 }
+
 .user-image{
     width: 40px;
     height: 40px;
@@ -55,6 +56,7 @@ body{
     margin-right: 1rem;
     padding: 5px;
 }
+
 .desktop-notification{
     font-size: 12px;
     color: grey;
@@ -70,6 +72,7 @@ body{
     font-size: 12px;
     color: grey;
 }
+
 .recently-conversation{
     height: calc(100vh - 140px);
     overflow-y: scroll;
@@ -81,6 +84,8 @@ body{
 .site-head-left, .site-head-right{
     height: 50px;
 }
+
+
 
 .main-conversation{
     background-image: url(../img/mine.jpg);
@@ -102,6 +107,7 @@ body{
     color: grey;
     padding-top: 1rem;
 }
+
 .site-footer-right{
     height: 50px;
 }
