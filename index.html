@@ -93,24 +93,10 @@
                     <!--Lista messaggi della conversazione principale-->
                     <div class="main-conversation">
 
-                        <div class="dropdown d-flex flex-column justify- align-items-end mt-5 me-5">
-                            <a class="border-0 btn btn-secondary text-start text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" v-for="(message, index) in contacts[activeContact].messages" v-bind:class=" message.status === 'sent' ? 'my-message' : '' ">
-                              {{message.message}}
-                              <p class="send mb-0 text-end">{{message.date}}</p>
-                            </a>
-                            <ul class="dropdown-menu">
-                              
-                            </ul>
-                        </div>
-                        
-                        <div class="dropdown d-flex flex-column justify- align-items-start mt-3 ms-5">
-                            <a class="border-0 btn btn-secondary text-start text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" v-for="(message, index) in contacts[activeContact].messages" v-bind:class=" message.status === 'received' ? 'friend-message' : '' ">
-                                {{message.message}}
-                              <p class="send mb-0 text-end">{{message.date}}</p>
-                            </a>
-                            <ul class="dropdown-menu">
-                              
-                            </ul>
+                        <div class="p-2 rounded-4 mt-5 mb-5" v-for="(message, index) in contacts[activeContact].messages" v-bind:class=" message.status === 'sent' ? 'my-message' : message.status === 'received' ? 'friend-message' : '' ">
+                          {{message.message}}
+                          <p class="send mb-0 text-end">{{message.date}}</p>
+                            
                         </div>
 
                     </div>
