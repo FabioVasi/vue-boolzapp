@@ -14,7 +14,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-    background-color: #E9EBEB;
+    background: linear-gradient(#009688 150px, #DBDBD2 100px);
     padding-top: 30px;
 }
 .lightgrey{
