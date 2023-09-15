@@ -122,7 +122,7 @@ const { createApp } = Vue
                     },
                     {
                         name: 'Claudia',
-                        avatar: './asset/img/avatar_5.jpg',
+                        avatar: './asset/img/avatar_6.jpg',
                         visible: true,
                         messages: [
                             {

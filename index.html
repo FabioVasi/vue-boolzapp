@@ -84,35 +84,29 @@
                     <div class="main-conversation">
                         <div class="dropdown d-flex flex-column justify- align-items-end mt-5 me-5">
                             <a class="my-message border-0 btn btn-secondary text-start text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Hai portato a spasso il cane?
+                              {{contacts[activeContact].messages[0]}}
                               <p class="send mb-0 text-end">15:30</p>
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              
                             </ul>
                         </div>
                         <div class="dropdown d-flex flex-column justify- align-items-end mt-3 me-5">
                             <a class="my-message border-0 btn btn-secondary text-start text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Ricordati di stendere i panni
+                                {{contacts[activeContact].messages[1]}}
                               <p class="send mb-0 text-end">15:50</p>
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              
                             </ul>
                         </div>
                         <div class="dropdown d-flex flex-column justify- align-items-start mt-3 ms-5">
                             <a class="friend-message border-0 btn btn-secondary text-start text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Tutto fatto!
+                                {{contacts[activeContact].messages[2]}}
                               <p class="send mb-0 text-end">16:15</p>
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              
                             </ul>
                         </div>
                     </div>
