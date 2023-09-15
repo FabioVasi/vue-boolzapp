@@ -212,12 +212,10 @@ const { createApp } = Vue
                 console.log(this.activeContact);
             },
             addNewMessage() {
-                console.log(this.addMessage);
-                if(this.addMessage != '') {
-                    let objectMessage = {message: this.addMessage, status: 'sent'};
-                    this.contacts.push(objectMessage);
-                    console.log(this.contacts);
-                }
+                console.log(this.addMessage);                
+                let objectMessage = {message: this.addMessage, status: 'sent'};
+                this.contacts[activeContact].messages.push(objectMessage);
+                console.log(this.messages);
             }
         }
     
