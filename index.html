@@ -94,27 +94,19 @@
                     <div class="main-conversation">
 
                         <div class="dropdown d-flex flex-column justify- align-items-end mt-5 me-5">
-                            <a class="my-message border-0 btn btn-secondary text-start text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              {{contacts[activeContact].messages[0]}}
-                              <p class="send mb-0 text-end">15:30</p>
+                            <a class="border-0 btn btn-secondary text-start text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" v-for="(message, index) in contacts[activeContact].messages" v-bind:class=" message.status === 'sent' ? 'my-message' : '' ">
+                              {{message.message}}
+                              <p class="send mb-0 text-end">{{message.date}}</p>
                             </a>
                             <ul class="dropdown-menu">
                               
                             </ul>
                         </div>
-                        <div class="dropdown d-flex flex-column justify- align-items-end mt-3 me-5">
-                            <a class="my-message border-0 btn btn-secondary text-start text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                {{contacts[activeContact].messages[1]}}
-                              <p class="send mb-0 text-end">15:50</p>
-                            </a>
-                            <ul class="dropdown-menu">
-                              
-                            </ul>
-                        </div>
+                        
                         <div class="dropdown d-flex flex-column justify- align-items-start mt-3 ms-5">
-                            <a class="friend-message border-0 btn btn-secondary text-start text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                {{contacts[activeContact].messages[2]}}
-                              <p class="send mb-0 text-end">16:15</p>
+                            <a class="border-0 btn btn-secondary text-start text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" v-for="(message, index) in contacts[activeContact].messages" v-bind:class=" message.status === 'received' ? 'friend-message' : '' ">
+                                {{message.message}}
+                              <p class="send mb-0 text-end">{{message.date}}</p>
                             </a>
                             <ul class="dropdown-menu">
                               
