@@ -214,15 +214,20 @@ const { createApp } = Vue
             addNewMessage() {
                 console.log(this.addMessage);
                 if(this.addMessage != '') {
-                    let objectMessage = {message: this.addMessage, status: 'sent', date: '15/09/2023 16:15:00'};                    
+                    let objectMessage = {message: this.addMessage, status: 'sent', date: '10/01/2020 16:15:00'};                    
                     this.contacts[this.activeContact].messages.push(objectMessage);   
                     setTimeout(this.receivedMessage, 1000);                 
                     console.log(this.contacts);
                 }
             },
             receivedMessage() {
-                let objectMessage = {message: 'Ok!', status: 'received', date: '15/09/2023 16:15:01'};                    
+                let objectMessage = {message: 'Ok!', status: 'received', date: '10/01/2020 16:15:01'};                    
                 this.contacts[this.activeContact].messages.push(objectMessage);                
+            },
+            chatFilter() {
+                if(contacts.visible === true) {
+                    
+                }
             }
         }
     
