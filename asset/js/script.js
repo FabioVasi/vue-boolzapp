@@ -39,6 +39,7 @@ const { createApp } = Vue
     createApp({
         data() {
             return {
+                addMessage: '',
                 activeContact: 0,
                 contacts: [
                     {
@@ -209,6 +210,14 @@ const { createApp } = Vue
             activeFriendChat(index) {
                 this.activeContact = index;
                 console.log(this.activeContact);
+            },
+            addNewMessage() {
+                console.log(this.addMessage);
+                if(this.addMessage != '') {
+                    let objectMessage = {message: this.addMessage, status: 'sent'};
+                    this.contacts.push(objectMessage);
+                    console.log(this.contacts);
+                }
             }
         }
     
