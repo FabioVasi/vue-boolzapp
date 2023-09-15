@@ -14,8 +14,8 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(#009688 150px, #DBDBD2 100px);
-    padding-top: 30px;
+    background: linear-gradient(#009688 140px, #DBDBD2 140px);
+    overflow: hidden;
 }
 .lightgrey{
     background-color: lightgrey;
@@ -71,7 +71,7 @@ body{
     color: grey;
 }
 .recently-conversation{
-    height: calc(100vh - 150px);
+    height: calc(100vh - 140px);
     overflow-y: scroll;
 }
 
@@ -79,12 +79,12 @@ body{
 
 
 .site-head-left, .site-head-right{
-    height: 60px;
+    height: 50px;
 }
 
 .main-conversation{
     background-image: url(../img/mine.jpg);
-    height: calc(100vh - 120px);
+    height: calc(100vh - 100px);
     overflow-y: scroll;
 }
 .my-message{
@@ -98,5 +98,5 @@ body{
     color: grey;
 }
 .site-footer-right{
-    height: 60px;
+    height: 50px;
 }
