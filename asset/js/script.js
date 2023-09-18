@@ -227,14 +227,17 @@ const { createApp } = Vue
             },
             friendChatFilter() {
                 console.log(this.friendName);
-                this.contacts.forEach(function(item, index, contacts) {
-                    if(this.friendName === '') {
-                        contacts[index].visible = true;
+                this.contacts.forEach((contacts, index) => {
+                    if(contacts.name.includes(this.friendName)) {
+                        console.log(contacts.name);
+                    } else {
+                        this.contacts[index].visible = false;
                     }
-                    if(!item.name.includes(this.friendName)) {
-                        contacts[index].visible = false;
+                    if(this.friendName === '') {
+                        this.contacts[index].visible = true;
                     }
                 });
+                
             }
         }
     
