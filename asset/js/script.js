@@ -238,7 +238,8 @@ const { createApp } = Vue
                     }
                 });
                 
-            }
+            },
+            
         }
     
     }).mount('#app')
